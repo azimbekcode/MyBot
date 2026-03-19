@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UserInfo Bot (Python)
 
 Ushbu bot Telegram foydalanuvchilari, guruhlar va kanallarning IDlarini olishga yordam beradi. Rasmda ko'rsatilgan barcha funksiyalar (User, Premium, Bot, Group, Channel, Forum va boshqalar) qo'shilgan.
@@ -35,3 +36,6 @@ Ushbu bot Telegram foydalanuvchilari, guruhlar va kanallarning IDlarini olishga 
 - **💬 Forum**: Mavzulari bor guruh IDsi.
 - **👥 My Group/Channel/Forum**: Siz admin bo'lgan chatlarni tanlash.
 - **Nusxalash**: IDni ustiga bossangiz, nusxa olish osonlashishi uchun monospace (`code`) ko'rinishida yuboriladi.
+=======
+# MyBot
+>>>>>>> b0ba64725cda4a1b414b78a640b203690443b7cb
