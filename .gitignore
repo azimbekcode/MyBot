@@ -1,0 +1,20 @@
+# Foydalanuvchi ma'lumotlari (Secretlar)
+.env
+
+# Virtual muhit
+.venv/
+env/
+venv/
+ENV/
+
+# Python kesh fayllari
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE sozlamalari
+.vscode/
+.idea/
+
+# MB loglari
+*.log
