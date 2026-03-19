@@ -55,6 +55,18 @@ def get_main_kb():
     builder.add(types.KeyboardButton(text="📢 Channel", request_chat=types.KeyboardButtonRequestChat(request_id=5, chat_is_channel=True)))
     builder.add(types.KeyboardButton(text="💬 Forum", request_chat=types.KeyboardButtonRequestChat(request_id=6, chat_is_channel=False, chat_is_forum=True)))
     
+    # My Admin rows
+    rights = types.ChatAdministratorRights(
+        can_manage_chat=True, is_anonymous=False, can_post_messages=True, can_edit_messages=True, 
+        can_delete_messages=True, can_manage_video_chats=True, can_restrict_members=True, 
+        can_promote_members=True, can_change_info=True, can_invite_users=True, 
+        can_post_stories=True, can_edit_stories=True, can_delete_stories=True
+    )
+    
+    builder.add(types.KeyboardButton(text="👥 My Group", request_chat=types.KeyboardButtonRequestChat(request_id=7, chat_is_channel=False, user_administrator_rights=rights)))
+    builder.add(types.KeyboardButton(text="📢 My Channel", request_chat=types.KeyboardButtonRequestChat(request_id=8, chat_is_channel=True, user_administrator_rights=rights)))
+    builder.add(types.KeyboardButton(text="💬 My Forum", request_chat=types.KeyboardButtonRequestChat(request_id=9, chat_is_channel=False, chat_is_forum=True, user_administrator_rights=rights)))
+    
     # Admin row
     # (Optional: only show if user is admin)
     
